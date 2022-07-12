@@ -1,0 +1,25 @@
+.grid-container {
+  display: grid;
+  grid-template-rows: repeat(4, 200px);
+  grid-template-areas:
+    "header header header"
+    "products products banner"
+    "products products banner"
+    "footer footer footer";
+  .header {
+    grid-area: header;
+    border: solid 2px black;
+  }
+  .items {
+    grid-area: products;
+    border: solid 2px black;
+  }
+  .publicidad {
+    grid-area: banner;
+    border: solid 2px black;
+  }
+  .pie {
+    grid-area: footer;
+    border: solid 2px black;
+  }
+}
